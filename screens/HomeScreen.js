@@ -44,6 +44,7 @@ export default function HomeScreen() {
         component={List} 
         options={{
           // --- STEP 2: Add the tabBarIcon option ---
+          headerShown: true, title:'Users',
           tabBarIcon: ({ focused, color, size }) => {
             const iconName = focused ? 'list' : 'list-outline';
             return <Ionicons name={iconName} size={size} color={color} />;
